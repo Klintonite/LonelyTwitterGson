@@ -7,18 +7,21 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.google.gson.Gson;
+
 import android.content.Context;
 import android.util.Log;
 import ca.ualberta.cs.lonelytwitter.Tweet;
 
 public class FileDataManager implements IDataManager{
 	
-	private static final String FILENAME = "file.sav";
+	private static final String FILENAME = "file2.sav";
 	
 	private Context ctx;
-	
+	private Gson gson;
 	public FileDataManager(Context ctx) {
 		this.ctx = ctx;
+		gson = new Gson();
 	}
 	
 	public ArrayList<Tweet> loadTweets() {

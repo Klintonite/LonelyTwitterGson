@@ -4,6 +4,13 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
+    <Button
+        android:id="@+id/SummaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="summary"
+        android:text="Summary" />
+
     <TextView
         android:id="@+id/oldTweetsTitle"
         android:layout_width="fill_parent"
